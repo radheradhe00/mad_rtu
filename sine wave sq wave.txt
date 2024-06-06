@@ -1,0 +1,37 @@
+sine wave
+
+
+% Parameters
+f = 5; % frequency in Hz
+t = 0:0.001:1; % time vector from 0 to 1 second with a step of 0.001 seconds
+A = 1; % amplitude
+
+% Sine wave
+y = A * sin(2 * pi * f * t);
+
+% Plotting the sine wave
+figure;
+plot(t, y);
+title('Sine Wave');
+xlabel('Time (s)');
+ylabel('Amplitude');
+grid on;
+
+
+square wave
+
+% Parameters
+f = 5; % frequency in Hz
+t = 0:0.001:1; % time vector from 0 to 1 second with a step of 0.001 seconds
+A = 1; % amplitude
+
+% Square wave
+y = A * square(2 * pi * f * t);
+
+% Plotting the square wave
+figure;
+plot(t, y);
+title('Square Wave');
+xlabel('Time (s)');
+ylabel('Amplitude');
+grid on;
